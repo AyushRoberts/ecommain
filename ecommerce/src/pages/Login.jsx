@@ -11,7 +11,7 @@ const Login = () => {
     setInputDetails({ ...inputDetails, [name]: value });
   };
   const signin = () => {
-    axios.post("http://localhost:3000/login", inputDetails).then((res) => {
+    axios.post("http://16.171.35.127:3001/login", inputDetails).then((res) => {
       alert(res.data.message);
       if (res.data.u) {
         setUser(res.data.u);

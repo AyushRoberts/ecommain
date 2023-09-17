@@ -7,7 +7,7 @@ const UserContextProvider = ({ children }) => {
 
   const getOrderHistory = async () => {
     await axios
-      .get("http://localhost:3000/orderHistory", {
+      .get("http://16.171.35.127:3001/orderHistory", {
         headers: { customer_id: user._id },
       })
       .then((r) => {

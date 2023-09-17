@@ -21,7 +21,7 @@ const Signup = () => {
       )
     )
       axios
-        .post("http://localhost:3000/signup", inputDetails)
+        .post("http://16.171.35.127:3001/signup", inputDetails)
         .then((res) => {
           if (res.data.success) {
             alert("Successfully Created");
