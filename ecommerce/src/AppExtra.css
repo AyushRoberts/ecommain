@@ -1,0 +1,45 @@
+.maincont {
+  display: flex;
+  justify-content: center;
+}
+.signUpForm {
+  margin-top: 25px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 10px;
+}
+.signUpForm p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+.signUpForm input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+}
+.inputlabel {
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: -5px;
+}
+.check {
+  max-width: 15px;
+  margin-right: 10px;
+}
+.rememberme {
+  margin-block: 5px 20px;
+}
+.bluebut {
+  padding: 12px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
