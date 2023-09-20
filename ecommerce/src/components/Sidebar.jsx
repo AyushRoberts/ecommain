@@ -16,19 +16,20 @@ const Sidebar = () => {
   const [curOldOrder, setCurOldOrder] = useState(0);
   const purchase = async () => {
     await axios
-      .post("http://localhost:3000/newOrder", {
+      .post("http://16.171.35.127:3001/newOrder", {
         customer_id: user._id,
         cart,
       })
       .then((response) => {
         alert(response.data.message);
         clearCart();
+        getOrderHist();
       });
   };
 
   const getOrderHist = async () => {
     await axios
-      .get("http://localhost:3000/orderHistory", {
+      .get("http://16.171.35.127:3001/orderHistory", {
         headers: {
           customer_id: user._id,
         },
