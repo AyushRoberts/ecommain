@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../AppExtra.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -33,6 +33,9 @@ const Signup = () => {
         });
     else alert("error");
   };
+  useEffect(() => {
+    alert("Password should have 8 Characters including a Number");
+  }, []);
   return (
     <>
       <div className="maincont">
